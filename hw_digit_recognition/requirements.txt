@@ -1,0 +1,45 @@
+# requirements for hw_digit_recognition
+# pinned to avoid numpy/opencv/tensorflow conflicts
+tensorflow==2.15.0
+numpy==1.26.4
+opencv-python==4.10.0.84
+Pillow>=9.1.0
+matplotlib
+scipy
+
+# -----------------------------
+# Usage & verification (run these in your activated .venv)
+# -----------------------------
+# 1) Install from this file
+#    python -m pip install --upgrade pip setuptools wheel
+#    python -m pip install -r requirements.txt
+#
+# 2) Quick runtime check
+#    python - <<'PY'
+#import tensorflow as tf
+#import numpy as np
+#import cv2
+#from PIL import Image
+#print('tensorflow', tf.__version__)
+#print('numpy', np.__version__)
+#print('opencv', cv2.__version__)
+#print('Pillow', Image.__version__)
+#PY
+#
+# 3) Run pip health check
+#    python -m pip check
+#
+# 4) If you see import errors, try these fixes:
+#   - Reinstall numpy + opencv compatible versions:
+#       python -m pip uninstall numpy opencv-python -y
+#       python -m pip install "numpy<2.0.0,>=1.23.5" "opencv-python<4.12" 
+#   - Reinstall Pillow if you see Resampling attribute issues:
+#       python -m pip install --upgrade "Pillow>=9.1.0"
+#   - If PowerShell blocks venv activation, either run CMD or set execution policy:
+#       Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+#
+# 5) Helpful VS Code tips
+#   - Make sure you select the interpreter: .\.venv\Scripts\python.exe
+#   - Open Terminal in VS Code (it should auto-activate .venv); then run the checks above
+#
+# If anything still fails, copy-paste the exact error text here and I'll provide the specific fix.
